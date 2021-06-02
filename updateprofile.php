@@ -42,7 +42,7 @@ if (!isset($_SESSION['username'])) {
 include('dbconnection.php');
 
 echo"<table class='table table-bordered table-striped table-hover'>";
-echo"<tr style=\"background:silver;\"><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>GENDER</th><th>AGE</th><th>PHONE</th><th>UPDATE</th></tr>";
+echo"<tr style=\"background:silver;\"><th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>E-MAIL</th><th>PHONE</th><th>ADDRESS</th><th>UPDATE</th></tr>";
 
 $query = "SELECT * FROM studentinfo";
 $exec = mysqli_query($conn, $query);
